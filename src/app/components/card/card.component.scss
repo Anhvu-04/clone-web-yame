@@ -1,0 +1,58 @@
+.background{
+  width: 100%;
+  height: auto;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  color: #454A4C;
+  font-size: 20px;
+  font-family: chakra-nova, sans-serif;
+  margin: 0px 0px 8px;
+}
+.container-card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px 100px;
+  .icon{
+
+  }
+  .product-card{
+    padding: 15px;
+    .image-product{
+      width: 255px;
+      height: 357px;
+      overflow: hidden;
+    }
+    .name-product{
+      display: flex;
+      justify-content: center;
+      font-size: 10px;
+      font-family: chakra-nova, sans-serif;
+      width: 255px;
+      text-align: center;
+      white-space: normal;
+      margin: auto;
+      color: #87898B;
+    }
+    .price-product{
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      gap: 10px;
+      font-size: 12px;
+      font-family: chakra-nova, sans-serif;
+      font-weight: bold;
+      margin-top: 5px ;
+      .price{
+        margin: auto 0px;
+        text-decoration: line-through;
+      }
+      .price-discount{
+        margin: auto 0px;
+        color: #FF0000;
+      }
+    }
+  }
+}

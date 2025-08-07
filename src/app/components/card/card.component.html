@@ -1,0 +1,15 @@
+<img class="background" src="https://cmsv2.yame.vn/uploads/b20acdfd-2021-4470-b926-489f4a7e3e82/sale_thang_8.jpg?quality=80&w=1280&h=0" alt="" >
+<h5 class="title">NHANH TAY KẺO "BAY" MẪU ĐẸP</h5>
+<div class="container-card">
+  @for (item of productCard; track item.name){
+      <mat-icon class="icon">{{item.icon}}</mat-icon>
+      <div class="product-card" (click)="navigateToDetail(item.name)">
+        <img class="image-product" src="{{item.imgBefore}}" alt="">
+        <p class="name-product" >{{item.name}}</p>
+        <div class="price-product">
+          <p class="price">đ{{item.price| number:'1.3-3'}}</p>
+          <p class="price-discount">đ{{item.priceDiscount | number:'1.3-3'}}</p>
+        </div>
+      </div>
+  }
+</div>

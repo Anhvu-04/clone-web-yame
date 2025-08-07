@@ -1,0 +1,123 @@
+.header{
+  height: 61px;
+  background-color: #343A40;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.container-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  .logo{
+    width: 155px;
+    height: 33.33px;
+  }
+
+  .logo img{
+    width: 100px;
+    height: 33.33px;
+  }
+}
+
+.menu {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.drop {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.drop-btn {
+  background-color: transparent;
+  color: white;
+  padding: 10px 10px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  font-weight: 100;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.drop-btn:hover {
+  color: #EE3F4D;
+}
+
+.drop-content {
+  border-top: 2px solid #EE3F4D;
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #1a1a1a;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  z-index: 500;
+}
+
+.drop-content a {
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.drop-content a:hover {
+  background-color: #F4F5F9;
+  color: #25262A;
+}
+
+.drop:hover .drop-content {
+  display: block;
+}
+.write a{
+  text-decoration: none;
+  color: white;
+}
+
+.drop-content-menu {
+  border-top: 2px solid #EE3F4D;
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #1a1a1a;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  z-index: 500;
+}
+
+.drop-content-menu a {
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.drop-content-menu a:hover {
+  background-color: #F4F5F9;
+  color: #25262A;
+}
+
+.drop:hover .drop-content-menu {
+  display: block;
+}
+
+.icon{
+  color: #FFFFFF;
+  display: flex;
+  gap: 30px;
+  margin-left: 50px;
+}
