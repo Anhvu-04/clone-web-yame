@@ -18,14 +18,16 @@ import {ProductModel} from '../../models/productmodels';
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.scss'
 })
-export class CartComponent {
+export class CartComponent implements OnInit{
   cartList: ProductModel[] = []
-  item: ProductModel[] = []
   totalPrice: number = 0;
-  constructor(public productService: ProductService) {
+  constructor(public productService: ProductService)  {
   }
   totalCart(priceDiscount: number){
     this.cartList = this.productService.cartList;
+    this.totalPrice = this.productService.getTotalPrice();
+  }
+  ngOnInit() {
     this.totalPrice = this.productService.getTotalPrice();
   }
 }

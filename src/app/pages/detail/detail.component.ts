@@ -20,6 +20,7 @@ export class DetailComponent {
   productDetail !: ProductModel
   @Input() productModel !: ProductModel;
 
+  totalPrice: number = 0;
   constructor(
     private activateRoute: ActivatedRoute,
     private router: Router,
@@ -32,5 +33,7 @@ export class DetailComponent {
     this.productService.addProductToCart(name);
     this.router.navigate(['/cart']).then();
   }
-
+  totalCart(priceDiscount: number){
+    this.totalPrice = this.productService.getTotalPrice();
+  }
 }

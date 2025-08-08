@@ -104,7 +104,9 @@ export class ProductService {
     }
   }
   getTotalPrice(): number {
-    return this.cartList.reduce((sum, item) => sum + (item.priceDiscount * (item.quantity || 1)), 0);
+    let temp = this.cartList.reduce((sum, item) => sum + (item.priceDiscount * (item.quantity || 1)), 0);
+    console.log(temp);
+    return temp;
   }
 }
 
