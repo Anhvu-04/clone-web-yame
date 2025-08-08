@@ -27,7 +27,7 @@
 .menu {
   padding: 10px 20px;
   font-size: 14px;
-  font-family: Arial, sans-serif;
+  font-family: chakra petch, sans-serif;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -47,7 +47,7 @@
   border: none;
   cursor: pointer;
   font-weight: 100;
-  font-family: Arial, sans-serif;
+  font-family: chakra petch, sans-serif;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -118,6 +118,13 @@
 .icon{
   color: #FFFFFF;
   display: flex;
+  align-items: center;
   gap: 30px;
   margin-left: 50px;
+}
+.icon-btn{
+  background: none;
+  border: none;
+  color: white;
+
 }

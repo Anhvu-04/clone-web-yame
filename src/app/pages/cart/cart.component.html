@@ -1,1 +1,26 @@
-<p>cart works!</p>
+<div class="header">
+
+</div>
+<div class="cart">
+  <div class="cart-product">
+    @for (itemCart of this.productService.cartList; track itemCart.name){
+      <mat-card class="example-card" appearance="outlined">
+        <mat-card-header>
+          <mat-card-title-group>
+            <mat-card-title>{{itemCart.name}}</mat-card-title>
+            <mat-card-subtitle>Giá gốc: {{itemCart.price | number: '1.3-3'}} đ</mat-card-subtitle>
+            <mat-card-subtitle>Giá giảm: {{itemCart.priceDiscount | number: '1.3-3'}} đ</mat-card-subtitle>
+            <mat-card-subtitle>Số lượng: {{itemCart.quantity}}</mat-card-subtitle>
+            <img mat-card-lg-image class="img" src="{{itemCart.imgBefore}}"  alt="">
+          </mat-card-title-group>
+        </mat-card-header>
+      </mat-card>
+    }
+  </div>
+  <div class="total">
+<!--    <p>{{ item.name }} - {{ item.priceDiscount | currency:'VND' }} × {{item.quantity || 1 }}</p>-->
+<!--  <hr>-->
+<!--  <h3>Tổng tiền: {{ totalPrice | currency:'VND' }}</h3>-->
+
+  </div>
+</div>

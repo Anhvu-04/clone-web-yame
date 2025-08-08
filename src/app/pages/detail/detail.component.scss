@@ -1,8 +1,60 @@
 .header{
   height: 61px;
 }
+.body{
+  display: flex;
+  justify-content: center;
+}
 .tool-title{
+  background-color: #E6E9EC;
   display: flex;
   flex-direction: row;
-  
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 10px;
+  width: 80%;
+}
+.outline{
+  display: flex;
+  justify-content: center;
+}
+.image{
+  .product{
+    width: 484px;
+    height: 678px;
+    border-radius: 20px;
+  }
+}
+.info{
+  font-family: chakra petch, sans-serif;
+  margin-left: 20px;
+  .name-product{
+    font-size: 14px;
+    color: #777B7C;
+    margin-top: 30px;
+  }
+  .price{
+    text-decoration: line-through;
+    color: #EE4266;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .price-discount{
+    color: #EE4266;
+    font-weight: bold;
+    font-size: 14px;
+  }
+    .cart-btn{
+      background-color: #c92127;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 7px;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .cart-btn:hover{
+      background-color: #a5181d;
+    }
 }

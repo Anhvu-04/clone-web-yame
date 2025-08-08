@@ -4,5 +4,6 @@ export interface ProductModel {
   imgAfter: string,
   name: string,
   price: number,
-  priceDiscount: number
+  priceDiscount: number,
+  quantity: number
 }
